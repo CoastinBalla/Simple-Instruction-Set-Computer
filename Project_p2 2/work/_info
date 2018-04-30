@@ -1,0 +1,304 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Project_p2 2
+valu
+Z0 !s110 1524186963
+!i10b 1
+!s100 W0L>RIQWAR4jllG6FV6gf1
+IiI=SKmOZD46JfCecLFF@e0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dZ:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2
+w1523891144
+8Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/alu.v
+FZ:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/alu.v
+L0 6
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1524186963.000000
+!s107 Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/alu.v|
+!s90 -reportprogress|300|-work|work|Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/alu.v|
+!s101 -O0
+!i113 1
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vbr
+R0
+!i10b 1
+!s100 kW=jDhJAFZ;JodM_=1mA_0
+Ic1U=_IzkzZ2L=f1jZFD>82
+R1
+R2
+Z6 w1522037184
+8Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/br.v
+FZ:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/br.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/br.v|
+!s90 -reportprogress|300|-work|work|Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/br.v|
+!s101 -O0
+!i113 1
+R5
+vctrl
+R0
+!i10b 1
+!s100 `fBDmC6;o[XEcWKbINBnC2
+IM^G62lddM[M=XbCeKCO6]1
+R1
+R2
+w1524058270
+8Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/ctrl.v
+FZ:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/ctrl.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/ctrl.v|
+!s90 -reportprogress|300|-work|work|Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/ctrl.v|
+!s101 -O0
+!i113 1
+R5
+vdm
+R0
+!i10b 1
+!s100 kihl?Qn<PgXhX::X?MDYP2
+IeT_PYA^^LJ=c5OXf`401a3
+R1
+R2
+w1460401252
+8Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/dm.v
+FZ:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/dm.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/dm.v|
+!s90 -reportprogress|300|-work|work|Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/dm.v|
+!s101 -O0
+!i113 1
+R5
+vim
+R0
+!i10b 1
+!s100 YmTHVZdXTiL976]ER;gBQ0
+IUg;>;EII3Z;<;>T3L1E1J0
+R1
+R2
+R6
+8Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/im.v
+FZ:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/im.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/im.v|
+!s90 -reportprogress|300|-work|work|Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/im.v|
+!s101 -O0
+!i113 1
+R5
+vir
+Z7 !s110 1524186964
+!i10b 1
+!s100 l3Y9Jj382IDORE4aRhmV:3
+ISjbi7;55n3]FF3nBRZ[b21
+R1
+R2
+R6
+8Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/ir.v
+FZ:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/ir.v
+L0 6
+R3
+r1
+!s85 0
+31
+Z8 !s108 1524186964.000000
+!s107 Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/ir.v|
+!s90 -reportprogress|300|-work|work|Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/ir.v|
+!s101 -O0
+!i113 1
+R5
+vmux16
+R7
+!i10b 1
+!s100 1gCO>JZ`Do?hB2?NRTQUV3
+IbM_ZTI<@86l]VlRTJS>9W2
+R1
+R2
+w1454963336
+8Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/mux16.v
+FZ:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/mux16.v
+L0 6
+R3
+r1
+!s85 0
+31
+R8
+!s107 Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/mux16.v|
+!s90 -reportprogress|300|-work|work|Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/mux16.v|
+!s101 -O0
+!i113 1
+R5
+vmux32
+R7
+!i10b 1
+!s100 Acz_fIGhQd8CLP=K1MHX>1
+INeZ5Z9hkEZ@em_<?2cNd72
+R1
+R2
+R6
+8Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/mux32.v
+FZ:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/mux32.v
+L0 6
+R3
+r1
+!s85 0
+31
+R8
+!s107 Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/mux32.v|
+!s90 -reportprogress|300|-work|work|Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/mux32.v|
+!s101 -O0
+!i113 1
+R5
+vmux4
+R7
+!i10b 1
+!s100 HRz]=:ikHCjI1m7o^]0YV0
+I7L`6N<B:X;ccdCIB29`z`0
+R1
+R2
+R6
+8Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/mux4.v
+FZ:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/mux4.v
+L0 6
+R3
+r1
+!s85 0
+31
+R8
+!s107 Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/mux4.v|
+!s90 -reportprogress|300|-work|work|Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/mux4.v|
+!s101 -O0
+!i113 1
+R5
+vpc
+R7
+!i10b 1
+!s100 g^<1nG1lh^PTV0;zBeBzj0
+ICV>Yl`[f1nh:9M]lQ>4;a0
+R1
+R2
+R6
+8Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/pc.v
+FZ:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/pc.v
+L0 6
+R3
+r1
+!s85 0
+31
+R8
+!s107 Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/pc.v|
+!s90 -reportprogress|300|-work|work|Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/pc.v|
+!s101 -O0
+!i113 1
+R5
+vrf
+R7
+!i10b 1
+!s100 Y]X9S761=bZX00UjaD]Ro3
+I6R6J5jVBhzhl2g>O1o9PU0
+R1
+R2
+R6
+8Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/rf.v
+FZ:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/rf.v
+L0 6
+R3
+r1
+!s85 0
+31
+R8
+!s107 Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/rf.v|
+!s90 -reportprogress|300|-work|work|Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/rf.v|
+!s101 -O0
+!i113 1
+R5
+vsisc
+Z9 !s110 1524186965
+!i10b 1
+!s100 Hmkg;>emVT`mOeb9B;E]z3
+IcKKUS;iDYB6eI^4@@8TZH3
+R1
+R2
+w1523889824
+8Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/sisc.v
+FZ:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/sisc.v
+L0 6
+R3
+r1
+!s85 0
+31
+Z10 !s108 1524186965.000000
+!s107 Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/sisc.v|
+!s90 -reportprogress|300|-work|work|Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/sisc.v|
+!s101 -O0
+!i113 1
+R5
+vsisc_tb
+R9
+!i10b 1
+!s100 XJeQjmc9lBbBAOaQHdTH11
+I;aW>1QP7zYE<Qb3mQ^Lg01
+R1
+R2
+w1492434346
+8Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/sisc_tb_p3.v
+FZ:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/sisc_tb_p3.v
+L0 6
+R3
+r1
+!s85 0
+31
+R10
+!s107 Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/sisc_tb_p3.v|
+!s90 -reportprogress|300|-work|work|Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/sisc_tb_p3.v|
+!s101 -O0
+!i113 1
+R5
+vstatreg
+R9
+!i10b 1
+!s100 N8RNk@:0mCn87Q8FG?AQL3
+I5mS:G_6z?D<9SQ6eeG]Fb3
+R1
+R2
+R6
+8Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/statreg.v
+FZ:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/statreg.v
+L0 6
+R3
+r1
+!s85 0
+31
+R10
+!s107 Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/statreg.v|
+!s90 -reportprogress|300|-work|work|Z:/OneDrive - University of Iowa/Spring2/Computer Architecture and Organization/Project/Project 4/Project_p2 2/statreg.v|
+!s101 -O0
+!i113 1
+R5

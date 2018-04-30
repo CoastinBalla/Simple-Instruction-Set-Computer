@@ -1,0 +1,290 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Project_p2 2
+valu
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 W0L>RIQWAR4jllG6FV6gf1
+IAOYzG5bN]b7X>Q37906a50
+Z1 d//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2
+w1523891144
+8//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/alu.v
+F//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/alu.v
+L0 6
+Z2 OL;L;10.6a;65
+Z3 !s108 1525127916.000000
+!s107 //iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/alu.v|
+!s90 -reportprogress|300|-work|work|//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/alu.v|
+!i113 0
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z5 tCvgOpt 0
+vbr
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 kW=jDhJAFZ;JodM_=1mA_0
+I_DU9m:XGF2Hh5Wc@WBJ862
+R1
+Z6 w1522037184
+8//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/br.v
+F//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/br.v
+L0 6
+R2
+R3
+!s107 //iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/br.v|
+!s90 -reportprogress|300|-work|work|//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/br.v|
+!i113 0
+R4
+R5
+vctrl
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 9`0^Y`J^0NI]a^TKfT5]M1
+ILHGE2^TWeWX?B>cOIK8h[0
+R1
+w1525124849
+8//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/ctrl.v
+F//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/ctrl.v
+L0 6
+R2
+R3
+!s107 //iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/ctrl.v|
+!s90 -reportprogress|300|-work|work|//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/ctrl.v|
+!i113 0
+R4
+R5
+vdm
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 kihl?Qn<PgXhX::X?MDYP2
+IH9YYC;6>A35gI0MVY7>0?3
+R1
+w1460401252
+8//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/dm.v
+F//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/dm.v
+L0 6
+R2
+R3
+!s107 //iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/dm.v|
+!s90 -reportprogress|300|-work|work|//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/dm.v|
+!i113 0
+R4
+R5
+vim
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 YmTHVZdXTiL976]ER;gBQ0
+IHeLnWEgzWRDPGf;Pk3nQ=0
+R1
+R6
+8//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/im.v
+F//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/im.v
+L0 6
+R2
+Z7 !s108 1525127917.000000
+!s107 //iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/im.v|
+!s90 -reportprogress|300|-work|work|//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/im.v|
+!i113 0
+R4
+R5
+vir
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 l3Y9Jj382IDORE4aRhmV:3
+IeU[?E3CbEL1^cOUTYJ[173
+R1
+R6
+8//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/ir.v
+F//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/ir.v
+L0 6
+R2
+R7
+!s107 //iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/ir.v|
+!s90 -reportprogress|300|-work|work|//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/ir.v|
+!i113 0
+R4
+R5
+vmux16
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 E;6Emgf9S;gQXIP`ZIfAa2
+IVRG1F[AD;SRhTdR1MK9]V0
+R1
+w1525020182
+8//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/mux16.v
+F//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/mux16.v
+L0 6
+R2
+R7
+!s107 //iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/mux16.v|
+!s90 -reportprogress|300|-work|work|//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/mux16.v|
+!i113 0
+R4
+R5
+vmux32
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 AbcGLkSEWKo7I`GF4cTI83
+I__^<`KQcDb22BIo_^Df1`0
+R1
+w1524237236
+8//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/mux32.v
+F//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/mux32.v
+L0 6
+R2
+Z8 !s108 1525127918.000000
+!s107 //iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/mux32.v|
+!s90 -reportprogress|300|-work|work|//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/mux32.v|
+!i113 0
+R4
+R5
+vmux4
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 dGnRK:PF]^^5K1:1M]E>e1
+I4W?SI4TG:fP0P[>RX780M0
+R1
+w1525025391
+8//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/mux4.v
+F//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/mux4.v
+L0 6
+R2
+R7
+!s107 //iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/mux4.v|
+!s90 -reportprogress|300|-work|work|//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/mux4.v|
+!i113 0
+R4
+R5
+vpc
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 g^<1nG1lh^PTV0;zBeBzj0
+I>n]Zc3WanC64V^TlP_me;2
+R1
+R6
+8//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/pc.v
+F//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/pc.v
+L0 6
+R2
+R8
+!s107 //iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/pc.v|
+!s90 -reportprogress|300|-work|work|//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/pc.v|
+!i113 0
+R4
+R5
+vrf
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 IXRE5k@:N3^WOj@oXdkTC1
+IYGo;4`DK3@ejVRNGm9DPn0
+R1
+w1525028095
+8//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/rf.v
+F//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/rf.v
+L0 6
+R2
+R8
+!s107 //iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/rf.v|
+!s90 -reportprogress|300|-work|work|//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/rf.v|
+!i113 0
+R4
+R5
+vsisc
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 PcM@0noReiRkVnMXFo;n82
+I;g;Z=<[5d2V<SlY54hM6k1
+R1
+w1525027923
+8//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/sisc.v
+F//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/sisc.v
+L0 6
+R2
+R8
+!s107 //iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/sisc.v|
+!s90 -reportprogress|300|-work|work|//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/sisc.v|
+!i113 0
+R4
+R5
+vsisc_tb
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 XJeQjmc9lBbBAOaQHdTH11
+I`fSSgNbjF40W0KdlX?i1I2
+R1
+w1492434346
+8//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/sisc_tb_p3.v
+F//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/sisc_tb_p3.v
+L0 6
+R2
+R8
+!s107 //iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/sisc_tb_p3.v|
+!s90 -reportprogress|300|-work|work|//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/sisc_tb_p3.v|
+!i113 0
+R4
+R5
+vstatreg
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 N8RNk@:0mCn87Q8FG?AQL3
+I8bO;>9^h5?znU>`;dBSSL1
+R1
+R6
+8//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/statreg.v
+F//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/statreg.v
+L0 6
+R2
+!s108 1525127919.000000
+!s107 //iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/statreg.v|
+!s90 -reportprogress|300|-work|work|//iowa.uiowa.edu/shared/engineering/home/cnwakama/windowsdata/Desktop/PP3/Part3II/True Project 3/Project_p2 2/statreg.v|
+!i113 0
+R4
+R5
