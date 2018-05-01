@@ -1,0 +1,94 @@
+////////////////////
+// Multiplication //
+////////////////////
+//
+// R1 = First operand
+// R2 = Second operand
+// R3 = # of negatives (0, 1, or 2)
+// R4 = Temporary value register
+//
+00000000 // 00: NOP
+10100000 // 01: LDA R1, M[0] ; Load the first # into R1
+10200001 // 02: LDA R2, M[1] ; Load the second # into R2
+
+// Zero Check //
+// If one of the numbers is zero, we write 0s into memory immediately.
+88110000 // 03: ADI R1, R1, 0
+41000032 // 04: BRA 32
+88220000 // 05: ADI R2, R2, 0
+41000032 // 06: BRA 32
+
+// Negative Check //
+// If one of the numbers is less than zero, increment the # of negative values.
+// Otherwise, we skip the incrementing and continue. The # of negative values is used
+// to determine how to handle values.
+88110000 // 07: ADI R1, R1, 0
+4200000A // 08: BRA 0A 
+6000000B // 09: BNE 0B 
+88330001 // 0A: ADI R3, R3, 1 
+88220000 // 0B: ADI R2, R2, 0
+4200000E // 0C: BRA 0E 
+6000000F // 0D: BNE 0F
+88330001 // 0E: ADI R3, R3, 1
+
+
+// Case 1: R3 = 0, both numbers are positive.
+88430000 // 0F: ADI R4, R3, 0 R4 = R3
+41000015 // 10: BRA 15 
+
+// Case 2: R3 = 1, one number is negative.
+8843FFFF // 11: ADI R4, R3, -1 R4 = R3 - 1 
+4100001A // 12: BRA 1A 
+
+// Case 3: R3 = 2, both numbers are negative.
+8843FFFE // 13: ADI R4, R3, -2 R4 = R3 - 2 
+4100001F // 14: BRA 1F 
+
+// Swap values when R1 > R2.
+80421002 // 15: SUB R4, R2, R1 R4 = R2 - R1
+43000018 // 16: BRA 18    If R4 <= 0, swap
+60000027 // 17: BNE 27 Branch past swaps to main loop
+30120000 // 18: SWP R1, R2
+60000027 // 19: BNE 27 Branch past swaps to main loop
+
+// Swap values when R2 > R1.
+80412002 // 1A: SUB R4, R1, R2 R4 <- R1 - R2
+4700001D // 1B: BRA 1D    If R4 <= 0 or underflow, swap
+60000027 // 1C: BNE 27 Branch past swaps to main loop
+30120000 // 1D: SWP R1, R2
+60000027 // 1E: BNE 27 Branch past swaps to main loop
+
+// Take the 2s complement, then swap when R1 > R2.
+8811FFFF // 1F: ADI R1, R1, -1      Decrement R1
+80110004 // 20: Negate R1
+8822FFFF // 21: ADI R2, R2, -1      Decrement R2
+80220004 // 22: Negate R2
+// Swap
+80421002 // 23: SUB R4, R2, R1 R4 <- R2 - R1
+43000026 // 24: BRA 26    If R4 <= 0, swap
+60000027 // 25: BNE 27 Branch past swaps to main loop
+30120000 // 26: SWP R1, R2
+
+// Main Loop: Add R2 + R2 R1 times into R4
+80442001 // 27: ADD R4, R4, R2      R4 <- R4 + R2
+4400002A // 28: BRA 2A If overflow
+6000002B // 29: BNE 2B else: unconditional past overflow check
+
+// Add 1 to MSB and reset overflow count
+88330001 // 2A: ADI R3, R3, 1    Increment R3
+
+8811FFFF // 2B: ADI R1, R1, -1      Decrement R1
+4300002E // 2C: BRA 2E  If R1 <= 0, done
+60000027 // 2D: BNE 27 unconditional branch to beginning of loop
+
+// Subtract 1 from R3
+8833FFFF // 2E: ADI R3, R3, -1      Decrement R3
+43000031 // 2F: BRA 31    If R3 <= 0, set R3 to 0
+60000032 // 30: BNE 32 unconditional branch past setting R3 to 0
+88300000 // 31: ADI R3, R0, 0      R3 = 0 
+
+// Write to memory
+20300002 // 32: STA R3, #0002      M(0002) <- R3                  
+20400003 // 33: STA R4, #0003      M(0003) <- R4     
+
+F0000000 // 34: HLT
