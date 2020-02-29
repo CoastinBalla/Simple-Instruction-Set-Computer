@@ -80,11 +80,68 @@ module ctrl (clk, rst_f, opcode, mm, stat, rf_we, alu_op, wb_sel);
   
   always @(opcode)
   begin
+	rf_we <= 1'b0;
+	alu_op <= 2'b10;
+	wb_sel <= 1'b0; 
+  
     if (opcode == HLT)
     begin 
       #5 $display ("Halt."); //Delay 5 ns so $monitor will print the halt instruction
       $stop;
     end
+	
+	case (present_state)
+	
+	fetch:
+		begin
+
+		end
+	
+	decode:
+		begin
+
+		end
+	
+	execute:
+		begin 
+			if ((opcode == LOD) || (opcode == STR))
+				alu_op[1] <= 1;
+			
+			
+			if (mm == AM_IMM)
+				alu_op[0] <= 1;
+	
+		end
+	mem:
+		begin
+			if (opcode == STR)
+				rf_we <= 0;
+				
+			if (opcode == LOD || opcode == ALU_OP || opcode == STR)
+				rf_we <= 1;
+			
+			if ((opcode == STR || opcode == LOD) )
+				wb_sel <= 1;
+				
+			
+		end 
+	
+	writeback:
+		begin
+			if ((opcode == STR || opcode == LOD))
+				begin 
+					wb_sel <= 1;
+					rf_we <= 1;
+				end
+		end 
+	
+	default: 
+		begin
+			rf_we <= 1'b0;
+			alu_op <= 2'b10;
+			wb_sel <= 1'b1; 
+		end
+	endcase
   end
     
   
