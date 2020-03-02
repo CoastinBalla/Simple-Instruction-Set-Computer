@@ -81,8 +81,11 @@ module ctrl (clk, rst_f, opcode, mm, stat, rf_we, alu_op, wb_sel);
   always @(opcode)
   begin
 	rf_we <= 1'b0;
-	alu_op <= 2'b10;
+	//alu_op <= 2'b10;
 	wb_sel <= 1'b0; 
+
+	alu_op[1] <= 0;
+	alu_op[0] <= 0;
   
     if (opcode == HLT)
     begin 
@@ -90,43 +93,44 @@ module ctrl (clk, rst_f, opcode, mm, stat, rf_we, alu_op, wb_sel);
       $stop;
     end
 	
-	case (present_state)
+	/*case (present_state)
+
 	
-	fetch:
+		fetch:
 		begin
 
 		end
 	
 	decode:
-		begin
+	begin
 
-		end
+	end*/
 	
-	execute:
+	if (execute == present_state)
 		begin 
 			if ((opcode == LOD) || (opcode == STR))
 				alu_op[1] <= 1;
 			
 			
-			if (mm == AM_IMM)
+			//if (mm == AM_IMM)
 				alu_op[0] <= 1;
 	
 		end
-	mem:
+	if (mem == present_state)
 		begin
-			if (opcode == STR)
+			/*if (opcode == STR)
 				rf_we <= 0;
 				
 			if (opcode == LOD || opcode == ALU_OP || opcode == STR)
 				rf_we <= 1;
-			
+			*/		
 			if ((opcode == STR || opcode == LOD) )
 				wb_sel <= 1;
 				
 			
 		end 
 	
-	writeback:
+	if (writeback == present_state)
 		begin
 			if ((opcode == STR || opcode == LOD))
 				begin 
@@ -135,13 +139,15 @@ module ctrl (clk, rst_f, opcode, mm, stat, rf_we, alu_op, wb_sel);
 				end
 		end 
 	
-	default: 
+	/*default: 
 		begin
 			rf_we <= 1'b0;
-			alu_op <= 2'b10;
-			wb_sel <= 1'b1; 
+			alu_op[1] <= 0;
+			alu_op[0] <= 1;
+			// alu_op <= 2'b10;
+			wb_sel <= 1'b0; 
 		end
-	endcase
+	endcase*/
   end
     
   
