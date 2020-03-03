@@ -80,11 +80,11 @@ module ctrl (clk, rst_f, opcode, mm, stat, rf_we, alu_op, wb_sel);
   
   always @(opcode)
   begin
-	rf_we <= 1'b0;
+	//rf_we <= 1'b0;
 	//alu_op <= 2'b10;
-	wb_sel <= 1'b0; 
+	//wb_sel <= 1'b0; 
 
-	alu_op[1] <= 0;
+	alu_op[1] <= 1;
 	alu_op[0] <= 0;
   
     if (opcode == HLT)
@@ -107,37 +107,42 @@ module ctrl (clk, rst_f, opcode, mm, stat, rf_we, alu_op, wb_sel);
 	end*/
 	
 	if (execute == present_state)
-		begin 
-			if ((opcode == LOD) || (opcode == STR))
-				alu_op[1] <= 1;
+	begin 
+		if ((opcode == LOD) || (opcode == STR))
+			alu_op[1] <= 1;
 			
 			
-			//if (mm == AM_IMM)
-				alu_op[0] <= 1;
+		if (mm == AM_IMM)
+			alu_op[0] <= 1;
 	
-		end
+	end
 	if (mem == present_state)
-		begin
+	begin
 			/*if (opcode == STR)
 				rf_we <= 0;
 				
 			if (opcode == LOD || opcode == ALU_OP || opcode == STR)
 				rf_we <= 1;
 			*/		
-			if ((opcode == STR || opcode == LOD) )
-				wb_sel <= 1;
+		if ((opcode == STR || opcode == LOD) )
+			wb_sel <= 1;
 				
+		if (opcode == ALU_OP)
+			wb_sel <= 1;
 			
-		end 
+	end 
 	
 	if (writeback == present_state)
-		begin
-			if ((opcode == STR || opcode == LOD))
-				begin 
-					wb_sel <= 1;
-					rf_we <= 1;
-				end
-		end 
+	begin
+		if ((opcode == STR || opcode == LOD))
+		begin 
+			wb_sel <= 1;
+			rf_we <= 1;
+		end
+				
+		if (opcode == ALU_OP)
+			rf_we <= 1;
+	end 
 	
 	/*default: 
 		begin
