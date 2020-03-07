@@ -10,22 +10,25 @@ module sisc (clk, rst_f, ir);
  
 // declare all internal wires here
 
-wire [31:0] Ra, Rb, alu_result, in, outMux32, rsa, rsb,read_data, ir, zero;
+wire [31:0] alu_result, outMux32, rsa, rsb, zero, ir;
 wire [1:0] alu_op;
 wire [3:0] outMux4, stat, cc;
-wire  stat_en, wb_sel, rf_we, sel;
+wire  stat_en, wb_sel, rf_we, sel, clk, rst_f;
 
 assign sel = 1'b0;
 assign zero = 0;
  
 // component instantiation goes here
 
-	mux4 u1 (.in_a(ir[23:20]), .in_b(ir[15:12]), .sel(sel), .out(outMux4)); 
-	rf u2 (.clk(clk), .read_rega(ir[19:16]), .read_regb(outMux4), .write_reg(ir[23:20]), .write_data(outMux32), .rf_we(rf_we), .rsa(rsa), .rsb(rsb)); 
+	// mux4 u1 (.in_a(ir[23:20]), .in_b(ir[15:12]), .sel(sel), .out(outMux4)); 
+	mux4 u1 (ir[15:12], ir[23:20], sel, outMux4); 
+	rf u2 (clk, ir[19:16], outMux4, ir[23:20], outMux32, rf_we, rsa, rsb); 
+	// rf u2 (.clk(clk), .read_rega(ir[19:16]), .read_regb(outMux4), .write_reg(ir[23:20]), .write_data(outMux32), .rf_we(rf_we), .rsa(rsa), .rsb(rsb)); 
+	// rf (clk, read_rega, read_regb, write_reg, write_data, rf_we, rsa, rsb);
 	ctrl u3 (.clk(clk), .rst_f(rst_f), .opcode(ir[31:28]), .mm(ir[27:24]), .stat(stat), .rf_we(rf_we), .alu_op(alu_op), .wb_sel(wb_sel));
 	// ctrl (clk, rst_f, opcode, mm, stat, rf_we, alu_op, wb_sel);
 	statreg u4 (.clk(clk), .in(cc), .enable(stat_en), .out(stat)); 
-	mux32 u5 (.in_a(zero), .in_b(alu_result), .sel(wb_sel), .out(outMux32)); 
+	mux32 u5 (.in_a(alu_result), .in_b(zero), .sel(wb_sel), .out(outMux32)); 
 	alu u6 (.clk(clk), .rsa(rsa), .rsb(rsb), .imm(ir[15:0]), .alu_op(alu_op), .alu_result(alu_result), .stat(cc), .stat_en(stat_en)); 
 
 // put a $monitor statement here.  

@@ -80,79 +80,66 @@ module ctrl (clk, rst_f, opcode, mm, stat, rf_we, alu_op, wb_sel);
   
   always @(opcode)
   begin
-	//rf_we <= 1'b0;
+	if (opcode == HLT)
+    	begin 
+      		#5 $display ("Halt."); //Delay 5 ns so $monitor will print the halt instruction
+      		$stop;
+    	end	
+
+	rf_we <= 1'b0;
 	//alu_op <= 2'b10;
-	//wb_sel <= 1'b0; 
+	wb_sel <= 1'b1; 
 
-	alu_op[1] <= 1;
-	alu_op[0] <= 0;
+	alu_op[1] <= 1'b0;
+	alu_op[0] <= 1'b0;
   
-    if (opcode == HLT)
-    begin 
-      #5 $display ("Halt."); //Delay 5 ns so $monitor will print the halt instruction
-      $stop;
-    end
-	
-	/*case (present_state)
-
-	
-		fetch:
-		begin
-
-		end
-	
-	decode:
-	begin
-
-	end*/
-	
-	if (execute == present_state)
+	if (present_state == 4)
 	begin 
 		if ((opcode == LOD) || (opcode == STR))
-			alu_op[1] <= 1;
-			
+		begin
+			alu_op[1] <= 1'b1;
+		end
 			
 		if (mm == AM_IMM)
-			alu_op[0] <= 1;
-	
+		begin
+			alu_op[0] <= 1'b1;
+		end
+
+		if (opcode == ALU_OP)
+		begin
+			alu_op[1] <= 1'b1;
+		end
+
+		rf_we <= 1'b1;
+		
 	end
-	if (mem == present_state)
-	begin
-			/*if (opcode == STR)
-				rf_we <= 0;
-				
-			if (opcode == LOD || opcode == ALU_OP || opcode == STR)
-				rf_we <= 1;
-			*/		
+	if (present_state == 5)
+	begin	
 		if ((opcode == STR || opcode == LOD) )
+		begin
 			wb_sel <= 1;
+		end
 				
 		if (opcode == ALU_OP)
+		begin
 			wb_sel <= 1;
+		end
 			
 	end 
 	
-	if (writeback == present_state)
+	if (present_state == 6)
 	begin
 		if ((opcode == STR || opcode == LOD))
 		begin 
-			wb_sel <= 1;
+			// wb_sel <= 1;
 			rf_we <= 1;
 		end
 				
 		if (opcode == ALU_OP)
-			rf_we <= 1;
-	end 
-	
-	/*default: 
 		begin
-			rf_we <= 1'b0;
-			alu_op[1] <= 0;
-			alu_op[0] <= 1;
-			// alu_op <= 2'b10;
-			wb_sel <= 1'b0; 
+			rf_we <= 1;
 		end
-	endcase*/
+	end 
   end
     
   
