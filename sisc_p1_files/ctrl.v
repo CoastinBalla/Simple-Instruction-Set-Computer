@@ -78,22 +78,65 @@ module ctrl (clk, rst_f, opcode, mm, stat, rf_we, alu_op, wb_sel);
 
 // Halt on HLT instruction
   
-  always @(opcode)
-  begin
-	if (opcode == HLT)
-    	begin 
-      		#5 $display ("Halt."); //Delay 5 ns so $monitor will print the halt instruction
-      		$stop;
-    	end	
+	always @(opcode)
+	begin
+		if (opcode == HLT)
+		begin 
+			#5 $display ("Halt."); //Delay 5 ns so $monitor will print the halt instruction
+			$stop;
+		end	
+	end 
+	
+	always @ (present_state)
+	begin
+		case(present_state)
+				//fetch: 
+				//decode: 
+			execute: 
+			begin		
+				if (mm == AM_IMM)
+					alu_op[0] <= 1'b1;
+				else 
+					alu_op[0] <= 1'b0;
+				
 
-	rf_we <= 1'b0;
-	//alu_op <= 2'b10;
-	wb_sel <= 1'b1; 
+				if (opcode == ALU_OP)
+					alu_op[1] <= 1'b0;
+				else 
+					alu_op[1] <= 1'b1;
+			end
+			
+			mem: 
+			begin
+				if (opcode == ALU_OP ||| opcode == STR || opcode == LOD)
+				begin
+					wb_sel <= 1'b0;
+				end
+			end
+			
+			writeback: 
+			begin 
+				if ((opcode == STR || opcode == ALU_OP))
+				begin
+					//wb_sel <= 1'b0;
+					rf_we <= 1'b1;
+				end
+			end
+	
+			default:
+			begin 
+				rf_we <= 1'b0;
+				//alu_op <= 2'b10;
+				wb_sel <= 1'b1; 
 
-	alu_op[1] <= 1'b0;
-	alu_op[0] <= 1'b0;
+				alu_op[1] <= 1'b1;
+				alu_op[0] <= 1'b0;
+	
+			end
+			
+		endcase 
   
-	if (present_state == 4)
+	/**if (present_state == execute)
 	begin 
 		if ((opcode == LOD) || (opcode == STR))
 		begin
@@ -110,10 +153,10 @@ module ctrl (clk, rst_f, opcode, mm, stat, rf_we, alu_op, wb_sel);
 			alu_op[1] <= 1'b1;
 		end
 
-		rf_we <= 1'b1;
+		// rf_we <= 1'b1;
 		
 	end
-	if (present_state == 5)
+	if (present_state == mem)
 	begin	
 		if ((opcode == STR || opcode == LOD) )
 		begin
@@ -123,11 +166,10 @@ module ctrl (clk, rst_f, opcode, mm, stat, rf_we, alu_op, wb_sel);
 		if (opcode == ALU_OP)
 		begin
 			wb_sel <= 1;
-		end
-			
+		end	
 	end 
 	
-	if (present_state == 6)
+	if (present_state == writeback)
 	begin
 		if ((opcode == STR || opcode == LOD))
 		begin 
@@ -139,7 +181,7 @@ module ctrl (clk, rst_f, opcode, mm, stat, rf_we, alu_op, wb_sel);
 		begin
 			rf_we <= 1;
 		end
-	end 
+	end */
   end
     
   
