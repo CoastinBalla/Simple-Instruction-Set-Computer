@@ -101,6 +101,7 @@ module ctrl (clk, rst_f, opcode, mm, stat, rf_we, alu_op, wb_sel, rd_sel, br_sel
 		pc_write <= 1'b0;
 		ir_load <= 1'b0;
 		rd_sel <= 1'b0;
+		pc_sel <= 1'b1;
 		case(present_state)
 		
 			start1:
@@ -110,10 +111,10 @@ module ctrl (clk, rst_f, opcode, mm, stat, rf_we, alu_op, wb_sel, rd_sel, br_sel
 			
 			fetch: 
 			begin 
-				pc_write <= 1'b1;
-				// pc_sel <= 1'b0;
+				// pc_in <= pc_out + 1, ir_load, pc_out <= pc_in
+				pc_sel <= 1'b0; // 1st - save current program counter
+				pc_write <= 1'b1; // 2nd - saved to pc_out and held there until the next time pc_en is set
 				ir_load <= 1'b1;
-			
 			end
 			decode:
 			begin 
@@ -136,13 +137,25 @@ module ctrl (clk, rst_f, opcode, mm, stat, rf_we, alu_op, wb_sel, rd_sel, br_sel
 					alu_op[1] <= 1'b1;
 					
 				if ((mm == 0) && (opcode == BNE || opcode == BNR || opcode == BRA || opcode == BRR))
-					pc_sel <= 1'b1;
+				begin
+					// pc_sel <= 1'b1;
+					pc_write <= 1'b1;
+				end
 				else if (((stat & mm) != 0) && (opcode == BRA || opcode == BRR))
-					pc_sel <= 1'b1;
+				begin	
+					// pc_sel <= 1'b1;
+					pc_write <= 1'b1;
+				end
 				else if (((stat & mm) == 0) && (opcode == BNE || opcode == BNR))
-					pc_sel <= 1'b1;
+				begin	
+					// pc_sel <= 1'b1;
+					pc_write <= 1'b1;
+				end
 				else 
-					pc_sel <= 1'b0;
+				begin
+					// pc_sel <= 1'b0;
+					pc_write <= 1'b1;
+				end
 					
 				if (opcode == STR || opcode == LOD)
 				begin
